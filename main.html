@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>calculator</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<div class="wrapper">
+		<table>
+			<tr>
+				<td>
+<input class="display"type="text" id="display" readonly="readonly"></input>
+				</td>
+			</tr>
+			<tr>
+			<td class="wrap">
+<button class="secondRow"
+onClick="undo()">Clear</button>
+<button class="secondRow" 
+onClick="doMath()">=</button>
+<button class="operand" 
+onClick="operate('+')">+</button>
+			</td>
+			</tr> 
+			<tr>
+			<td class="wrap">
+<button class="nums" 
+onClick="insert(7)">7</button>
+<button class="nums" 
+onClick="insert(8)">8</button>
+<button class="nums" 
+onClick="insert(9)">9</button>
+<button class="operand" onClick="operate('-')">-</button>
+			</td>
+			</tr>
+			<tr>
+			<td class="wrap">
+<button class="nums" 
+onClick="insert(4)">4</button>
+<button class="nums" 
+onClick="insert(5)">5</button>
+<button class="nums" 
+onClick="insert(6)">6</button>
+<button class="operand" onClick="operate('*')">*</button>
+			</td>
+			</tr>
+			<tr>
+			<td class="wrap">
+<button class="nums" 
+onClick="insert(1)">1</button>
+<button class="nums" 
+onClick="insert(2)">2</button>
+<button class="nums" 
+onClick="insert(3)">3</button>
+<button class="operand" onClick="operate('/')">/</button>
+			</td>
+			</tr>
+		</table>
+	</div>
+    <script src="calc.js"></script>
+	</body>
+</html>
